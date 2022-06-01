@@ -1,13 +1,462 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* CSS dùng chung */
+html {
+  font-size: 15px;
+  font-family: Lato, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  background-color: #f7f9f9;
+}
+
+.header__image_right img {
+  width: 100%;
+}
+
+header .row {
+  justify-content: space-between;
+}
+
+.page__title h4 {
+  color: purple;
+}
+
+.page__title address {
+  font-size: 14px;
+}
+
+.page__title>h4 {
+  font-weight: bold;
+}
+
+.page__title address .telephone {
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
+
+/* END HEADER */
+
+/* NAVBAR */
+nav {
+  max-height: 50px;
+  margin-top: -25px;
+  z-index: 10;
+}
+
+nav>.container {
+  background-color: #429BFD;
+  border-radius: 40px;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+}
+
+.nav-item .nav-link {
+  color: white;
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+}
+
+/* BANNER */
+.banner {
+  background-image: linear-gradient(to right, rgb(65 4 145 / 85%), rgba(12, 9, 179, 0.8)), url(../public/img/background_banner.jpg);
+  width: 100%;
+  margin-top: -25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  z-index: 0;
+  position: relative;
+}
+
+.banner__content {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
+
+/* END BANNER */
+
+/* INTRODUCE */
+
+.page__introduce {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  min-height: 500px;
+  background-color: #f7f9f9;
+}
+
+/* INTRODUCE LEFT */
+
+.page__introduce .active_goal .slogan {
+  color: #429BFD;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.page__introduce .page__introduce_list {
+  margin-top: 30px;
+}
+
+.page__introduce .page__introduce_list .page__introduce_item {
+  margin-bottom: 30px;
+}
+
+.page__introduce .page__introduce_list .icon img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+.page__introduce .page__introduce_list .content {
+  margin-left: 15px;
+
+}
+
+.page__introduce .page__introduce_list .content h5 {
+  font-weight: bold;
+
+}
+
+/* INTRODUCE RIGHT */
+.page__introduce .card {
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+
+.page__introduce .card-header {
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  min-height: 54px;
+}
+
+.page__introduce .class_list {
+  max-width: 32%;
+}
+
+.page__introduce .class_list .card-header {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #429BFD;
+}
+
+.page__introduce .class_list .begin_time {
+  display: block;
+  color: white;
+  content: "";
+  width: 70px;
+  height: 70px;
+  background-color: green;
+  border-radius: 50%;
+  position: relative;
+  padding: 14px;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.page__introduce .class_list .class_info {
+  margin-left: 15px;
+}
+
+.page__introduce .class_list .class_info>h6 {
+  font-weight: bold;
+  color: orange;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+
+.page__introduce .class_list .list-group-item {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.page__introduce .class_list .class_info .review {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5rem;
+}
+
+.page__introduce .class_list .class_info .review img {
+  border-radius: 50%;
+}
+
+.page__introduce .class_list .class_info .review span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.star-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.star-wrapper a {
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.5s;
+  margin: 4px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: yellow;
+}
+
+.star-wrapper a:hover {
+  color: gold;
+  transform: scale(1.3);
+  -webkit-text-fill-color: yellow;
+}
+
+/* END INTRODUCE */
+
+/* ĐỘI NGŨ GIẢNG VIÊN */
+.page__teachers-list {
+  flex-direction: row;
+  background-image: url('../public/img/Leader-Training-banner.png');
+  min-height: 300px;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page__teachers-list .container .wrapper {
+  height: 100%;
+  align-content: center;
+  color: white;
+}
+
+.page__teachers-list .teachers-list-left {
+  display: flex;
+  height: 100%;
+  background-color: rgb(106, 105, 198, 0.7);
+  ;
+}
+
+.page__teachers-list .teachers-list-left .content {
+  align-self: center;
+}
+
+.page__teachers-list .teachers-list-right {
+  background-image: linear-gradient(to right, rgb(81, 102, 207), rgb(66, 154, 254));
+}
+
+.page__teachers-list .teachers-list-right .teacher-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.page__teachers-list .teachers-list-right .teachers-list-item {
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+}
+
+.page__teachers-list .teachers-list-right .teachers-list-item .avatar img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.page__teachers-list .teachers-list-right .teachers-list-item .profile {
+  padding-left: 15px;
+}
+
+.page__teachers-list .teachers-list-right .teachers-list-item .profile h5 {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+/* MÔI TRƯỜNG HỌC */
+.environment {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.environment .slick-wrapper>h3 {
+  text-align: center;
+  color: #429BFD;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+/* FOR SLICK */
+
+.slick-slide {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #429BFD !important;
+}
+
+/* END MÔI TRƯỜNG HỌC */
+
+/*CONTACT WITH US*/
+
+.form__box {
+  background-image: linear-gradient(to right, rgb(4 6 84), rgb(26 117 221));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.form__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form__title h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.form__title p {
+  font-size: 1rem;
+  color: white;
+}
+
+#form-id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact_with_us .form-group {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.form-group>input {
+  height: 50px;
+}
+
+.form-group>input::placeholder,
+#message::placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+#contact_with_us .form-control {
+  background: transparent;
+  border: solid 1px white;
+  color: white;
+  font-size: 1rem;
+}
+
+.form--submit {
+  width: 50%;
+  height: 50px;
+}
+
+.form--submit>.row {
+  height: 100%;
+}
+
+#remember_me {
+  height: 100%;
+  padding-top: 11px;
+}
+
+#submit_btn {
+  height: 100%;
+}
+
+.form--submit label {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.form--submit button {
+  background: transparent;
+  float: right;
+  height: 100%;
+  width: 50%;
+}
+
+.form-group span {
+  color: red;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+.slider-wrapper {
+  width: 760px;
+  margin: auto;
+}
+
+.slick-slide {
+  text-align: center;
+  position: relative;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+.slick-slide-title {
+  text-transform: capitalize;
+}
+
+.slick-slide-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3),
+    0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+}
+
+.slick-slide-label {
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  left: 0px;
+  font-size: 1.5em;
+  bottom: 0px;
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #777777;
 }
