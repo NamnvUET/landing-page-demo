@@ -29,11 +29,11 @@ export default function ContactForm(props) {
                             </div>
                             <div className="form--submit">
                                 <div className="row">
-                                    <div className="col-md-6" id="remember_me">
+                                    <div className="col-md-6 col-xs-12" id="remember_me">
                                         <input type="checkbox" name="check" id="form--checbox" />
-                                        <label for="form--checbox">Đăng kí nhận thông báo</label>
+                                        <label htmlFor="form--checbox">Đăng kí nhận thông báo</label>
                                     </div>
-                                    <div className="col-md-6" id="submit_btn">
+                                    <div className="col-md-6 col-xs-12" id="submit_btn">
                                         <button type="submit" name="submit" className="btn btn-primary">Gửi</button>
                                     </div>
                                 </div>

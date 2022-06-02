@@ -3,7 +3,7 @@ export default function Introduce(props) {
         <section className="page__introduce">
             <div className="container">
                 <div className="row">
-                    <div className="col col-8">
+                    <div className="col col-md-8 col-xs-12">
                         <div className="active_goal">
                             <h4 className="slogan">
                                 VÌ SỰ NGHIỆP GIÁO DỤC
@@ -13,10 +13,10 @@ export default function Introduce(props) {
                                 Đề luyện thi chất lượng, có bài giải cho bài thi
                             </p>
                         </div>
-                        <div className="row row-cols-2 page__introduce_list">
-                            <div className="col col-6 d-flex align-items-center page__introduce_item">
+                        <div className="row row-cols-md-2 row-cols-xs-1 page__introduce_list">
+                            <div className="col col-md-6 col-xs-12 d-flex align-items-center page__introduce_item">
                                 <div className="icon">
-                                    <img src="./img/icon1.jpg" alt=""/>
+                                    <img src={process.env.PUBLIC_URL + '/img/icon1.jpg'} alt="" />
                                 </div>
                                 <div className="content">
                                     <h5>Giao hàng toàn quốc</h5>
@@ -25,9 +25,9 @@ export default function Introduce(props) {
                                     </p>
                                 </div>
                             </div>
-                            <div className="col col-6 d-flex align-items-center page__introduce_item">
+                            <div className="col col-md-6 col-xs-12 d-flex align-items-center page__introduce_item">
                                 <div className="icon">
-                                    <img src="./img/icon1.jpg" alt=""/>
+                                    <img src={process.env.PUBLIC_URL + '/img/icon1.jpg'} alt="" />
                                 </div>
                                 <div className="content">
                                     <h5>Giao hàng toàn quốc</h5>
@@ -36,10 +36,10 @@ export default function Introduce(props) {
                                     </p>
                                 </div>
                             </div>
-                            {/* <!-- <div className="breaker"></div> --> */}
-                            <div className="col col-6 d-flex align-items-center page__introduce_item">
+                            {/* <div className="breaker"></div> */}
+                            <div className="col col-md-6 col-xs-12 d-flex align-items-center page__introduce_item">
                                 <div className="icon">
-                                    <img src="./img/icon1.jpg" alt=""/>
+                                    <img src={process.env.PUBLIC_URL + '/img/icon1.jpg'} alt="" />
                                 </div>
                                 <div className="content">
                                     <h5>Giao hàng toàn quốc</h5>
@@ -48,9 +48,9 @@ export default function Introduce(props) {
                                     </p>
                                 </div>
                             </div>
-                            <div className="col col-6 d-flex align-items-center page__introduce_item">
+                            <div className="col col-md-6 col-xs-12 d-flex align-items-center page__introduce_item">
                                 <div className="icon">
-                                    <img src="./img/icon1.jpg" alt=""/>
+                                    <img src={process.env.PUBLIC_URL + '/img/icon1.jpg'} alt="" />
                                 </div>
                                 <div className="content">
                                     <h5>Giao hàng toàn quốc</h5>
@@ -62,7 +62,7 @@ export default function Introduce(props) {
                         </div>
                     </div>
 
-                    <div className="col-4 class_list">
+                    <div className="col-md-4 col-xs-12 class_list">
                         <div className="card">
                             <div className="card-header">
                                 LỊCH TUYỂN SINH
@@ -77,14 +77,14 @@ export default function Introduce(props) {
                                             <h6>Khóa học phát triển tư duy logic</h6>
                                             <span>Kỹ năng tư duy logic đã trở thành một kĩ năng</span>
                                             <div className="review">
-                                                <img src="./img/insta_icon.jpg" alt=""/>
-                                                    <div className="star-wrapper">
-                                                        <a href="#" className="fa fa-star s1"></a>
-                                                        <a href="#" className="fa fa-star s2"></a>
-                                                        <a href="#" className="fa fa-star s3"></a>
-                                                        <a href="#" className="fa fa-star s4"></a>
-                                                        <a href="#" className="fa fa-star s5"></a>
-                                                    </div>
+                                                <img src={process.env.PUBLIC_URL + '/img/insta_icon.jpg'} alt="" />
+                                                <div className="star-wrapper">
+                                                    <a href="#" className="fa fa-star s1"></a>
+                                                    <a href="#" className="fa fa-star s2"></a>
+                                                    <a href="#" className="fa fa-star s3"></a>
+                                                    <a href="#" className="fa fa-star s4"></a>
+                                                    <a href="#" className="fa fa-star s5"></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -98,14 +98,14 @@ export default function Introduce(props) {
                                             <h6>Khóa học phát triển tư duy logic</h6>
                                             <span>Kỹ năng tư duy logic đã trở thành một kĩ năng</span>
                                             <div className="review">
-                                                <img src="./img/insta_icon.jpg" alt=""/>
-                                                    <div className="star-wrapper">
-                                                        <a href="#" className="fa fa-star s1"></a>
-                                                        <a href="#" className="fa fa-star s2"></a>
-                                                        <a href="#" className="fa fa-star s3"></a>
-                                                        <a href="#" className="fa fa-star s4"></a>
-                                                        <a href="#" className="fa fa-star s5"></a>
-                                                    </div>
+                                                <img src={process.env.PUBLIC_URL + '/img/insta_icon.jpg'} alt="" />
+                                                <div className="star-wrapper">
+                                                    <a href="#" className="fa fa-star s1"></a>
+                                                    <a href="#" className="fa fa-star s2"></a>
+                                                    <a href="#" className="fa fa-star s3"></a>
+                                                    <a href="#" className="fa fa-star s4"></a>
+                                                    <a href="#" className="fa fa-star s5"></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -119,14 +119,14 @@ export default function Introduce(props) {
                                             <h6>Khóa học phát triển tư duy logic</h6>
                                             <span>Kỹ năng tư duy logic đã trở thành một kĩ năng</span>
                                             <div className="review">
-                                                <img src="./img/insta_icon.jpg" alt=""/>
-                                                    <div className="star-wrapper">
-                                                        <a href="#" className="fa fa-star s1"></a>
-                                                        <a href="#" className="fa fa-star s2"></a>
-                                                        <a href="#" className="fa fa-star s3"></a>
-                                                        <a href="#" className="fa fa-star s4"></a>
-                                                        <a href="#" className="fa fa-star s5"></a>
-                                                    </div>
+                                                <img src={process.env.PUBLIC_URL + '/img/insta_icon.jpg'} alt="" />
+                                                <div className="star-wrapper">
+                                                    <a href="#" className="fa fa-star s1"></a>
+                                                    <a href="#" className="fa fa-star s2"></a>
+                                                    <a href="#" className="fa fa-star s3"></a>
+                                                    <a href="#" className="fa fa-star s4"></a>
+                                                    <a href="#" className="fa fa-star s5"></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

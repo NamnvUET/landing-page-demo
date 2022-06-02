@@ -11,7 +11,36 @@ export default class Enviroments extends Component {
             slidesToScroll: 1,
             rows: 1,
             className: 'slick-content',
-            
+            autoplay: true,
+            speed: 1500,
+            responsive: [
+                // {
+                //   breakpoint: 1024,
+                //   settings: {
+                //     slidesToShow: 3,
+                //     slidesToScroll: 3,
+                //     infinite: true,
+                //     dots: true
+                //   }
+                // },
+                // {
+                //   breakpoint: 600,
+                //   settings: {
+                //     slidesToShow: 2,
+                //     slidesToScroll: 2,
+                //     initialSlide: 2
+                //   }
+                // },
+                {
+                  breakpoint: 576,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true
+                  }
+                }
+              ]
         };
         return (
             <section class="environment">
@@ -20,25 +49,25 @@ export default class Enviroments extends Component {
                         <h3>MÔI TRƯỜNG HỌC</h3>
                         <Slider {...settings}>
                             <div>
-                                <img src="./img/hinh-anh-lop-hoc.jpg" alt="logo_item" width={"100%"}/>
+                                <img src={process.env.PUBLIC_URL + '/img/hinh-anh-lop-hoc.jpg'} alt="logo_item" width={"100%"}/>
                             </div>
                             <div>
-                                <img src="./img/hinh-anh-lop-hoc.jpg" alt="logo_item" width={"100%"}/>
+                                <img src={process.env.PUBLIC_URL + '/img/hinh-anh-lop-hoc.jpg'} alt="logo_item" width={"100%"}/>
                             </div>
                             <div>
-                                <img src="./img/hinh-anh-lop-hoc.jpg" alt="logo_item" width={"100%"}/>
+                                <img src={process.env.PUBLIC_URL + '/img/hinh-anh-lop-hoc.jpg'} alt="logo_item" width={"100%"}/>
                             </div>
                             <div>
-                                <img src="./img/hinh-anh-lop-hoc.jpg" alt="logo_item" width={"100%"}/>
+                                <img src={process.env.PUBLIC_URL + '/img/hinh-anh-lop-hoc.jpg'} alt="logo_item" width={"100%"}/>
                             </div>
                             <div>
-                                <img src="./img/hinh-anh-lop-hoc.jpg" alt="logo_item" width={"100%"}/>
+                                <img src={process.env.PUBLIC_URL + '/img/hinh-anh-lop-hoc.jpg'} alt="logo_item" width={"100%"}/>
                             </div>
                             <div>
-                                <img src="./img/hinh-anh-lop-hoc.jpg" alt="logo_item" width={"100%"}/>
+                                <img src={process.env.PUBLIC_URL + '/img/hinh-anh-lop-hoc.jpg'} alt="logo_item" width={"100%"}/>
                             </div>
                             <div>
-                                <img src="./img/hinh-anh-lop-hoc.jpg" alt="logo_item" width={"100%"}/>
+                                <img src={process.env.PUBLIC_URL + '/img/hinh-anh-lop-hoc.jpg'} alt="logo_item" width={"100%"}/>
                             </div>
                         </Slider>
                     </div>
