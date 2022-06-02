@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export default function Navigation(props) {
@@ -18,7 +17,7 @@ export default function Navigation(props) {
                     {/* <!-- NAVBAR LEFT --> */}
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link " href="">Về chúng tôi</a>
+                            <a className="nav-link " href=''>Về chúng tôi</a>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button"

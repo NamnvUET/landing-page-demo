@@ -1,0 +1,103 @@
+/* For XS Device <576px */
+/* @media screen and (max-width: 900px)
+{
+    header .row {
+        flex-direction: column;
+    }
+} */
+@media only screen and (max-width: 576px) {
+
+  /* HEADER */
+  header .row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  header .row .logo {
+    padding-top: 1rem;
+  }
+
+  header .row .page__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* NAVBAR */
+  /* nav.sticky-top{
+    top:24px;
+  } */
+
+  nav>.container {
+    border-radius: 0 !important;
+  }
+
+  nav>.container button.navbar-toggler {
+    color: white !important;
+  }
+
+  /* BANNER */
+  section.banner {
+    min-height: 250px;
+  }
+
+  /* INTRODUCE */
+  .page__introduce>.container .row {
+    flex-direction: column;
+  }
+
+  .page__introduce div.class_list {
+    max-width: 100%;
+  }
+
+  .page__introduce div.card-header {
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* TEACHER */
+  .page__teachers-list .container .wrapper {
+    flex-direction: column;
+  }
+
+  .page__teachers-list .teachers-list-left .content {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .page__teachers-list .teachers-list-right {
+    padding-top: 1rem;
+  }
+
+  .page__teachers-list .teachers-list-right div.teachers-list-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page__teachers-list .teachers-list-right div.teachers-list-item .profile {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  /* CONTACT WITH US */
+  #contact_with_us div.form-group {
+    width: 100%;
+  }
+
+  div.form--submit {
+    width: 100%;
+  }
+
+  #remember_me {
+    text-align: center;
+  }
+
+  .form--submit #submit_btn {
+    text-align: center;
+  }
+
+  .form--submit #submit_btn button {
+    background: transparent;
+    float: none;
+    height: 100%;
+    width: 50%;
+  }
+}

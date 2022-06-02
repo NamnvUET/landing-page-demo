@@ -7,7 +7,7 @@ export default function Teachers(props) {
         <section className="page__teachers-list container-fluid p-0">
             <div className="container">
                 <div className="row wrapper">
-                    <div className="teachers-list-left col col-4">
+                    <div className="teachers-list-left col col-md-4 col-xs-12">
                         <div className="content">
                             <h4 className="fw-bold">Đội ngũ thầy cô chuyên nghiệp</h4>
                             <p>100% thầy cô giáo giỏi với nhiều năm kinh nghiệm giáo dục
@@ -16,11 +16,11 @@ export default function Teachers(props) {
                             </p>
                         </div>
                     </div>
-                    <div className="teachers-list-right teachers-list-item col col-8">
-                        <div className="row row-cols-2" style={{ height: '100%' }}>
+                    <div className="teachers-list-right col col-md-8 col-xs-12">
+                        <div className="row row-cols-md-2 row-cols-xs-2" style={{ height: '100%' }}>
                             <div className="col col-6 teachers-list-item">
                                 <div className="avatar">
-                                    <img src="./img/avatar.png" alt=""/>
+                                    <img src={process.env.PUBLIC_URL + '/img/avatar.png'} alt=""/>
                                 </div>
                                 <div className="profile">
                                     <h5>Cô Phương Ly Ly</h5>
@@ -31,7 +31,7 @@ export default function Teachers(props) {
                             </div>
                             <div className="col col-6 teachers-list-item">
                                 <div className="avatar">
-                                    <img src="./img/avatar.png" alt=""/>
+                                    <img src={process.env.PUBLIC_URL + '/img/avatar.png'} alt=""/>
                                 </div>
                                 <div className="profile">
                                     <h5>Cô Phương Ly Ly</h5>
@@ -43,7 +43,7 @@ export default function Teachers(props) {
                             
                             <div className="col col-6 teachers-list-item">
                                 <div className="avatar">
-                                    <img src="./img/avatar.png" alt=""/>
+                                    <img src={process.env.PUBLIC_URL + '/img/avatar.png'} alt=""/>
                                 </div>
                                 <div className="profile">
                                     <h5>Cô Phương Ly Ly</h5>
@@ -54,7 +54,7 @@ export default function Teachers(props) {
                             </div>
                             <div className="col col-6 teachers-list-item">
                                 <div className="avatar">
-                                    <img src="./img/avatar.png" alt=""/>
+                                    <img src={process.env.PUBLIC_URL + '/img/avatar.png'} alt=""/>
                                 </div>
                                 <div className="profile">
                                     <h5>Cô Phương Ly Ly</h5>
