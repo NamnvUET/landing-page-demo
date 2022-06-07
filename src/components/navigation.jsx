@@ -16,6 +16,7 @@ export default function Navigation(props) {
                 <div className="collapse navbar-collapse justify-content-between" id="navbarContent">
                     {/* <!-- NAVBAR LEFT --> */}
                     <ul className="navbar-nav">
+                        
                         <li className="nav-item">
                             <a className="nav-link " href=''>Về chúng tôi</a>
                         </li>
@@ -44,8 +45,8 @@ export default function Navigation(props) {
                         </li>
                     </ul>
                     {/* <!-- NAVBAR RIGHT --> */}
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
+                    <ul className="navbar-nav navbar-right">
+                        <li className="nav-item search-area">
                             <i className="fa-solid fa-magnifying-glass"></i>
                         </li>
                     </ul>

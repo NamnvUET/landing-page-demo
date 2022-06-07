@@ -12,6 +12,10 @@ html {
   padding: 0;
 }
 
+:root {
+  --banner-min-height: 600px;
+}
+
 /* HEADER */
 header {
   background-color: #f7f9f9;
@@ -47,8 +51,7 @@ header .row {
 
 /* NAVBAR */
 nav {
-  max-height: 50px;
-  margin-top: -25px;
+  margin-top: -21px;
   z-index: 10;
 }
 
@@ -69,14 +72,23 @@ nav>.container {
   /* font-weight: bold; */
 }
 
+.search-area {
+  color: white;
+  padding: 0 1.25rem;
+}
+
+.search-area:hover{
+  cursor: pointer;
+}
+
 /* BANNER */
 .banner {
   background-image: linear-gradient(to right, rgb(65 4 145 / 85%), rgba(12, 9, 179, 0.8)), url(../public/img/background_banner.jpg);
   width: 100%;
-  margin-top: -25px;
+  margin-top: -21px;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 800px;
+  min-height: var(--banner-min-height);
   z-index: 0;
   position: relative;
 }
@@ -229,7 +241,7 @@ nav>.container {
 .page__teachers-list {
   flex-direction: row;
   background-image: url('../public/img/Leader-Training-banner.png');
-  min-height: 300px;
+  min-height: var(--banner-min-height);
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
@@ -255,6 +267,9 @@ nav>.container {
 
 .page__teachers-list .teachers-list-right {
   background-image: linear-gradient(to right, rgb(81, 102, 207), rgb(66, 154, 254));
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .page__teachers-list .teachers-list-right .teacher-info img {
@@ -267,6 +282,8 @@ nav>.container {
   display: flex;
   align-self: center;
   align-items: flex-start;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .page__teachers-list .teachers-list-right .teachers-list-item .avatar img {

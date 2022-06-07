@@ -25,7 +25,7 @@ const Teacher = ({ getTeachersDemo, teacherForPropTeacherComponent }) => {
                         </div>
                     </div>
                     <div className="teachers-list-right col col-md-8 col-xs-12">
-                        <div className="row row-cols-md-2 row-cols-xs-2" style={{ height: '100%' }}>
+                        <div className="row row-cols-md-2 row-cols-xs-2">
                             {
                                 teacherForPropTeacherComponent.map(teacher => (
                                     <div key={teacher.id} className="col col-6 teachers-list-item">

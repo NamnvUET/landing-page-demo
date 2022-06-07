@@ -16,6 +16,10 @@ const initialState = {
             id: uuidv4(),
             name: 'Phương Ly Ly 3',
             description: 'Thiên tài kiến trúc, Bà hoàng coder, kẻ hủy diệt bug, bla bla bla. Lorem ipsum bla bla bla',
+        },{
+            id: uuidv4(),
+            name: 'Phương Ly Ly 3',
+            description: 'Thiên tài kiến trúc, Bà hoàng coder, kẻ hủy diệt bug, bla bla bla. Lorem ipsum bla bla bla',
         }
     ]
 }
