@@ -1,8 +1,16 @@
 'use strict';
 
-import React from 'react';
+import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { getTeachersDemo } from '../store/action/teacherAction'
 
-export default function Teachers(props) {
+const Teacher = ({ getTeachersDemo, teacherForPropTeacherComponent }) => {
+    //GetTodos
+    useEffect(() => {
+        getTeachersDemo()
+    }, [])
+
     return (
         <section className="page__teachers-list container-fluid p-0">
             <div className="container">
@@ -18,56 +26,37 @@ export default function Teachers(props) {
                     </div>
                     <div className="teachers-list-right col col-md-8 col-xs-12">
                         <div className="row row-cols-md-2 row-cols-xs-2" style={{ height: '100%' }}>
-                            <div className="col col-6 teachers-list-item">
-                                <div className="avatar">
-                                    <img src={process.env.PUBLIC_URL + '/img/avatar.png'} alt=""/>
-                                </div>
-                                <div className="profile">
-                                    <h5>Cô Phương Ly Ly</h5>
-                                    <p>Thiên tài kiến trúc, Bà hoàng coder, kẻ hủy diệt bug, bla bla bla.
-                                        Lorem ipsum bla bla bla
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col col-6 teachers-list-item">
-                                <div className="avatar">
-                                    <img src={process.env.PUBLIC_URL + '/img/avatar.png'} alt=""/>
-                                </div>
-                                <div className="profile">
-                                    <h5>Cô Phương Ly Ly</h5>
-                                    <p>Thiên tài kiến trúc, Bà hoàng coder, kẻ hủy diệt bug, bla bla bla.
-                                        Lorem ipsum bla bla bla
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div className="col col-6 teachers-list-item">
-                                <div className="avatar">
-                                    <img src={process.env.PUBLIC_URL + '/img/avatar.png'} alt=""/>
-                                </div>
-                                <div className="profile">
-                                    <h5>Cô Phương Ly Ly</h5>
-                                    <p>Thiên tài kiến trúc, Bà hoàng coder, kẻ hủy diệt bug, bla bla bla.
-                                        Lorem ipsum bla bla bla
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col col-6 teachers-list-item">
-                                <div className="avatar">
-                                    <img src={process.env.PUBLIC_URL + '/img/avatar.png'} alt=""/>
-                                </div>
-                                <div className="profile">
-                                    <h5>Cô Phương Ly Ly</h5>
-                                    <p>Thiên tài kiến trúc, Bà hoàng coder, kẻ hủy diệt bug, bla bla bla.
-                                        Lorem ipsum bla bla bla
-                                    </p>
-                                </div>
-                            </div>
+                            {
+                                teacherForPropTeacherComponent.map(teacher => (
+                                    <div key={teacher.id} className="col col-6 teachers-list-item">
+                                        <div className="avatar">
+                                            <img src={process.env.PUBLIC_URL + '/img/avatar.png'} alt="" />
+                                        </div>
+                                        <div className="profile">
+                                            <h5>{teacher.name}</h5>
+                                            <p>{teacher.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     );
-
 }
+
+Teacher.propTypes = {
+    teacherForPropTeacherComponent: PropTypes.array.isRequired,
+    getTeachersDemo: PropTypes.func.isRequired
+}
+
+const mapStateToProps = state => (
+    {
+        teacherForPropTeacherComponent: state.teacherInRootReducer.teacherInTeacherReducer,
+    }
+)
+
+export default connect(mapStateToProps, { getTeachersDemo })(Teacher)
