@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { getContentDemo } from '../store/action/contentAction'
-import { getClassesDemo } from '../store/action/classAction'
+import { getContentDemo } from '../../store/action/contentAction'
+import { getClassesDemo } from '../../store/action/classAction'
 
 const Introduce = ({ getContentDemo, getClassesDemo, contentForPropIntroduceComponent, classForPropIntroduceComponent }) => {
     //GetTodos

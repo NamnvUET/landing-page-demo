@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import Routers from '../../Routers';
 
 export default function Navigation(props) {
 
@@ -6,7 +8,7 @@ export default function Navigation(props) {
         <nav className="navbar navbar-expand-sm sticky-top no-padding">
             <div className="container">
 
-                <a className="navbar-brand" href=''>Trang chủ</a>
+                <NavLink to={'/'} className='navbar-brand'>Trang chủ</NavLink>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent">
@@ -16,15 +18,13 @@ export default function Navigation(props) {
                 <div className="collapse navbar-collapse justify-content-between" id="navbarContent">
                     {/* <!-- NAVBAR LEFT --> */}
                     <ul className="navbar-nav">
-                        
+
                         <li className="nav-item">
-                            <a className="nav-link " href=''>Về chúng tôi</a>
+                            <NavLink to={Routers.Pages.AboutUs} className='nav-link'>Về chúng tôi</NavLink>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Khóa học nâng cao
-                            </a>
+                            <NavLink to={Routers.Pages.Courses} className="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" >Khóa học nâng cao</NavLink>
                             <ul className="dropdown-menu">
                                 <li><a className="dropdown-item" href="">ggg</a></li>
                                 <li><a className="dropdown-item" href="">Another action</a></li>
@@ -32,16 +32,16 @@ export default function Navigation(props) {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="">Lịch học</a>
+                            <NavLink to={Routers.Pages.Schedules} className='nav-link'>Lịch học</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="">Đăng kí khóa học</a>
+                            <NavLink to={Routers.Pages.RegisterCourses} className='nav-link'>Đăng kí khóa học</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="">Tin tức</a>
+                            <NavLink to={Routers.Pages.News} className='nav-link'>Tin tức</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="#">Liên hệ</a>
+                            <NavLink to={Routers.Pages.Contacts} className='nav-link'>Liên hệ</NavLink>
                         </li>
                     </ul>
                     {/* <!-- NAVBAR RIGHT --> */}

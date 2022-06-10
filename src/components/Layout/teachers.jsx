@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { getTeachersDemo } from '../store/action/teacherAction'
+import { getTeachersDemo } from '../../store/action/teacherAction'
 
 const Teacher = ({ getTeachersDemo, teacherForPropTeacherComponent }) => {
     //GetTodos
