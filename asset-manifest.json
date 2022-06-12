@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landing-page-demo/static/css/main.72ae11a7.css",
-    "main.js": "/landing-page-demo/static/js/main.25605c0f.js",
+    "main.css": "/landing-page-demo/static/css/main.bf686a67.css",
+    "main.js": "/landing-page-demo/static/js/main.7bee4437.js",
     "static/media/background_banner.jpg": "/landing-page-demo/static/media/background_banner.a09dad6fdac11fe0406b.jpg",
     "static/media/Leader-Training-banner.png": "/landing-page-demo/static/media/Leader-Training-banner.c073e9960e94c984f1c3.png",
     "static/media/slick.svg": "/landing-page-demo/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -9,11 +9,11 @@
     "static/media/slick.ttf": "/landing-page-demo/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/landing-page-demo/index.html",
     "static/media/slick.woff": "/landing-page-demo/static/media/slick.295183786cd8a1389865.woff",
-    "main.72ae11a7.css.map": "/landing-page-demo/static/css/main.72ae11a7.css.map",
-    "main.25605c0f.js.map": "/landing-page-demo/static/js/main.25605c0f.js.map"
+    "main.bf686a67.css.map": "/landing-page-demo/static/css/main.bf686a67.css.map",
+    "main.7bee4437.js.map": "/landing-page-demo/static/js/main.7bee4437.js.map"
   },
   "entrypoints": [
-    "static/css/main.72ae11a7.css",
-    "static/js/main.25605c0f.js"
+    "static/css/main.bf686a67.css",
+    "static/js/main.7bee4437.js"
   ]
 }
