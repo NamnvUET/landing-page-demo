@@ -34,7 +34,7 @@ header .row {
 }
 
 .page__title address {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .page__title>h4 {
@@ -124,6 +124,7 @@ nav>.container {
 
 .page__introduce .page__introduce_list .page__introduce_item {
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .page__introduce .page__introduce_list .icon img {
@@ -290,6 +291,7 @@ nav>.container {
 
 .page__teachers-list .teachers-list-left .content {
   align-self: center;
+  text-align: justify;
 }
 
 .page__teachers-list .teachers-list-right {
@@ -311,6 +313,7 @@ nav>.container {
   align-items: flex-start;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+  text-align: justify;
 }
 
 .page__teachers-list .teachers-list-right .teachers-list-item .avatar img {

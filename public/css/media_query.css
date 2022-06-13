@@ -1,5 +1,89 @@
+/* For large device >= 992px and <= 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .page__introduce .page__introduce_list div.icon img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .page__introduce div.class_list {
+    max-width: unset;
+  }
+
+  .list-group-item {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .page__introduce .class_list div.class_info {
+    margin-left: 0.5rem;
+  }
+
+  div.star-wrapper {
+    margin-left: unset;
+  }
+}
+
+/* FOR Medium Device ≥768px and <=992px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo img {
+    width: 100%;
+  }
+
+  div.page__title h4 {
+    font-size: 1.25rem;
+  }
+
+  div.page__title address {
+    font-size: 0.7rem;
+  }
+
+  nav {
+    height: 42px;
+  }
+
+  a.navbar-brand {
+    font-size: unset;
+  }
+
+  nav.navbar-expand-md .navbar-nav .nav-link {
+    font-size: unset;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+  }
+}
+
+/* FOR Medium Device ≥768px and <=992px*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+  /* HEADER */
+  header .row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  header .row .logo {
+    padding-top: 1rem;
+  }
+
+  header .row .page__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* NAVBAR */
+  nav>.container {
+    border-radius: 0 !important;
+  }
+
+  nav>.container button.navbar-toggler {
+    color: white !important;
+  }
+}
+
 /* For XS Device <576px */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
 
   /* HEADER */
   header .row {
@@ -91,5 +175,3 @@
     width: 50%;
   }
 }
-
-/* @media only screen and () */
