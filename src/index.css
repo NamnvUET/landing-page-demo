@@ -238,15 +238,44 @@ nav>.container {
 /* END INTRODUCE */
 
 /* ĐỘI NGŨ GIẢNG VIÊN */
+
+.section-wrapper{
+  position: relative;
+  min-height: var(--banner-min-height);
+}
+
+.page__teachers-list-background{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  height: 100%;
+}
+
+.page__teachers-list-background .left-background{
+  width: 40%;
+  height: 100%;
+  background: url('../public/img/left-img.png');
+  background-color: rgb(22 4 137 / 48%);
+  background-size: 100% 100%;
+  background-blend-mode: darken ;
+  background-repeat: no-repeat;
+}
+.page__teachers-list-background .right-background{
+  width: 60%;
+  height: 100%;
+  background-color: rgb(66, 154, 254);
+}
+
 .page__teachers-list {
   flex-direction: row;
-  background-image: url('../public/img/Leader-Training-banner.png');
-  min-height: var(--banner-min-height);
+  height: 100%;
   display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
+
 
 .page__teachers-list .container .wrapper {
   height: 100%;
@@ -257,8 +286,6 @@ nav>.container {
 .page__teachers-list .teachers-list-left {
   display: flex;
   height: 100%;
-  background-color: rgb(106, 105, 198, 0.7);
-  ;
 }
 
 .page__teachers-list .teachers-list-left .content {
