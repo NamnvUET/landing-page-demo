@@ -34,7 +34,7 @@ header .row {
 }
 
 .page__title address {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .page__title>h4 {
@@ -55,21 +55,23 @@ nav {
   z-index: 10;
 }
 
-nav>.container {
+nav > .container {
   background-color: #429BFD;
   border-radius: 40px;
+  height: 100%;
 }
+
 
 .navbar-brand {
   color: white;
   font-size: 1.2rem;
-  /* font-weight: bold; */
+  font-weight: bold;
 }
+
 
 .nav-item .nav-link {
   color: white;
   font-size: 1.2rem;
-  /* font-weight: bold; */
 }
 
 .search-area {
@@ -79,7 +81,7 @@ nav>.container {
 
 .search-area:hover{
   cursor: pointer;
-}
+} */
 
 /* BANNER */
 .banner {
@@ -124,6 +126,7 @@ nav>.container {
 
 .page__introduce .page__introduce_list .page__introduce_item {
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .page__introduce .page__introduce_list .icon img {
@@ -290,6 +293,7 @@ nav>.container {
 
 .page__teachers-list .teachers-list-left .content {
   align-self: center;
+  text-align: justify;
 }
 
 .page__teachers-list .teachers-list-right {
@@ -311,6 +315,7 @@ nav>.container {
   align-items: flex-start;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+  text-align: justify;
 }
 
 .page__teachers-list .teachers-list-right .teachers-list-item .avatar img {
@@ -504,3 +509,37 @@ nav>.container {
 .slick-next:before {
   color: #777777;
 }
+
+
+
+
+/* Navigation demo */
+
+/* .navbar_demo {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar_demo a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar_demo a:hover {
+  background-color: #000;
+}
+
+.navbar_demo_item_active {
+  background-color: #04AA6D;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar_demo a {
+    float: none;
+    display: block;
+  }
+} */
