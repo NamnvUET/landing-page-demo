@@ -1,24 +1,32 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import Routers from '../../Routers';
 
-export default function Navigation(props) {
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
+import { NavLink } from 'react-router-dom';
+import { getCategoryDemo } from '../../store/action/categoryAction'
+
+const Navigation = ({ getCategoryDemo, categoryForPropNavigationComponent }) => {
+    useEffect(() => {
+        getCategoryDemo()
+    }, [])
 
     function hasClass(element, className) {
-        return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
+        return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
     }
 
-    function controlNav(){
+    function controlNav() {
         let myNavbar = document.getElementById('navbar');
         let navbarButton = document.getElementsByClassName('navbar-toggler')[0];
         let is_collapsed = hasClass(navbarButton, 'collapsed');
 
-        if(!is_collapsed){
+        if (!is_collapsed) {
             myNavbar.classList.add("nav_sidebar");
             myNavbar.querySelector('.container').classList.add('nav_collapse_container');
             console.log('rgorgkorgrg')
         }
-        else{
+        else {
             myNavbar.classList.remove("nav_sidebar");
             myNavbar.querySelector('.container').classList.remove('nav_collapse_container');
         }
@@ -44,11 +52,14 @@ export default function Navigation(props) {
                         </li>
                         <li className="nav-item dropdown">
                             <NavLink to={Routers.Pages.Courses} className="nav-link dropdown-toggle" href="#"
-                                id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Khóa học nâng cao</NavLink>
+                                id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Khóa học</NavLink>
                             <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a className="dropdown-item" href="#">ggg</a></li>
-                                <li><a className="dropdown-item" href="#">Another action</a></li>
-                                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                {
+                                    categoryForPropNavigationComponent.map(cate => (
+                                        <li><a className="dropdown-item" href="#" data-toggle="tooltip" data-placement="right" title={cate.description}>{cate.category_name}</a></li>
+                                    ))
+                                }
+
                             </ul>
                         </li>
                         <li className="nav-item">
@@ -75,6 +86,18 @@ export default function Navigation(props) {
 
         </nav>
 
-        
+
     );
 }
+
+
+Navigation.propTypes = {
+    categoryForPropNavigationComponent: PropTypes.array.isRequired,
+    getCategoryDemo: PropTypes.func.isRequired
+}
+
+const mapStateToProps = state => ({
+    categoryForPropNavigationComponent: state.categoryInRootReducer.categoryInCategoryReducer
+})
+
+export default connect(mapStateToProps, { getCategoryDemo })(Navigation)
