@@ -4,7 +4,7 @@ import Routers from '../../Routers';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { getCategoryDemo } from '../../store/action/categoryAction'
 
 const Navigation = ({ getCategoryDemo, categoryForPropNavigationComponent }) => {
@@ -56,7 +56,10 @@ const Navigation = ({ getCategoryDemo, categoryForPropNavigationComponent }) => 
                             <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 {
                                     categoryForPropNavigationComponent.map(cate => (
-                                        <li><a className="dropdown-item" href="#" data-toggle="tooltip" data-placement="right" title={cate.description}>{cate.category_name}</a></li>
+
+                                        < Link className="dropdown-item" data-toggle="tooltip" data-placement="right" title={cate.description} to={`${Routers.Pages.Category}/${cate.slug}`} key={cate.id}>
+                                            {cate.category_name}
+                                        </Link>
                                     ))
                                 }
 
@@ -82,9 +85,9 @@ const Navigation = ({ getCategoryDemo, categoryForPropNavigationComponent }) => 
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div >
 
-        </nav>
+        </nav >
 
 
     );

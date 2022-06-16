@@ -5,18 +5,21 @@ const initialState = {
         {
             id: uuidv4(),
             category_name: 'Toán',
+            slug: 'math',
             description: 'Kỹ năng tư duy logic đã trở thành một kĩ năng pháp sư toán học',
             category_image: process.env.PUBLIC_URL + '/img/insta_icon.jpg',
         },
         {
             id: uuidv4(),
             category_name: 'Văn',
+            slug: 'literature',
             description: 'Kỹ năng tư duy logic đã trở thành một kĩ năng pháp sư văn hoa',
             category_image: process.env.PUBLIC_URL + '/img/insta_icon.jpg',
         },
         {
             id: uuidv4(),
-            category_name: 'Tin',
+            category_name: 'Lập trình',
+            slug: 'developer',
             description: 'Kỹ năng tư duy logic đã trở thành một kĩ năng code siêu đỉnh',
             category_image: process.env.PUBLIC_URL + '/img/insta_icon.jpg',
         },

@@ -4,11 +4,12 @@ const DEFAULT_EXTENSION = '';
 
 module.exports = {
     Pages: {
-        AboutUs: '/Pages/AboutUs' + DEFAULT_EXTENSION,
-        Courses: '/Pages/Courses' + DEFAULT_EXTENSION,
-        Schedules: '/Pages/Schedules' + DEFAULT_EXTENSION,
-        RegisterCourses : '/Pages/RegisterCourses' + DEFAULT_EXTENSION,
-        News: '/Pages/News' + DEFAULT_EXTENSION,
-        Contacts: '/Pages/Contacts' + DEFAULT_EXTENSION,
+        AboutUs: '/AboutUs' + DEFAULT_EXTENSION,
+        Courses: '/Courses' + DEFAULT_EXTENSION,
+        Schedules: '/Schedules' + DEFAULT_EXTENSION,
+        RegisterCourses : '/RegisterCourses' + DEFAULT_EXTENSION,
+        News: '/News' + DEFAULT_EXTENSION,
+        Contacts: '/Contacts' + DEFAULT_EXTENSION,
+        Category: '/Categories' + DEFAULT_EXTENSION
     }
 };

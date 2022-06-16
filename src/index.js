@@ -6,7 +6,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import store from './store/store.js';
 // Import React Router v6
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 // Import Routers List
 import Routers from './Routers';
 //Import Pages
@@ -27,13 +27,14 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} >
-            <Route index element={ <Home />} />
+            <Route index element={<Home />} />
             <Route path={Routers.Pages.AboutUs} element={<AboutUs />}></Route>
             <Route path={Routers.Pages.Schedules} element={<Schedules />}></Route>
             <Route path={Routers.Pages.RegisterCourses} element={<RegisterCourses />}></Route>
             <Route path={Routers.Pages.News} element={<News />}></Route>
             <Route path={Routers.Pages.Contacts} element={<Contact />}></Route>
           </Route>
+          <Route exact path='/landing-page-demo' element={<Navigate to="/" />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
