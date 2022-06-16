@@ -55,21 +55,23 @@ nav {
   z-index: 10;
 }
 
-nav>.container {
+nav > .container {
   background-color: #429BFD;
   border-radius: 40px;
+  height: 100%;
 }
+
 
 .navbar-brand {
   color: white;
   font-size: 1.2rem;
-  /* font-weight: bold; */
+  font-weight: bold;
 }
+
 
 .nav-item .nav-link {
   color: white;
   font-size: 1.2rem;
-  /* font-weight: bold; */
 }
 
 .search-area {
@@ -79,7 +81,7 @@ nav>.container {
 
 .search-area:hover{
   cursor: pointer;
-}
+} */
 
 /* BANNER */
 .banner {
@@ -507,3 +509,37 @@ nav>.container {
 .slick-next:before {
   color: #777777;
 }
+
+
+
+
+/* Navigation demo */
+
+/* .navbar_demo {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar_demo a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar_demo a:hover {
+  background-color: #000;
+}
+
+.navbar_demo_item_active {
+  background-color: #04AA6D;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar_demo a {
+    float: none;
+    display: block;
+  }
+} */

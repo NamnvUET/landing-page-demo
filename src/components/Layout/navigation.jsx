@@ -4,21 +4,41 @@ import Routers from '../../Routers';
 
 export default function Navigation(props) {
 
+    function hasClass(element, className) {
+        return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
+    }
+
+    function controlNav(){
+        let myNavbar = document.getElementById('navbar');
+        let navbarButton = document.getElementsByClassName('navbar-toggler')[0];
+        let is_collapsed = hasClass(navbarButton, 'collapsed');
+
+        if(!is_collapsed){
+            myNavbar.classList.add("nav_sidebar");
+            myNavbar.querySelector('.container').classList.add('nav_collapse_container');
+            console.log('rgorgkorgrg')
+        }
+        else{
+            myNavbar.classList.remove("nav_sidebar");
+            myNavbar.querySelector('.container').classList.remove('nav_collapse_container');
+        }
+
+    }
+
     return (
-        <nav className="navbar navbar-expand-md sticky-top no-padding">
-            <div className="container" style={{height: "100%"}}>
-
-                <NavLink to={'/'} className='navbar-brand'>Trang chủ</NavLink>
-
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav className="navbar navbar-expand-md sticky-top no-padding" id='navbar'>
+            <div className="container">
+                <button className="navbar-toggler" type='button' data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" onClick={controlNav}>
                     <i className="fas fa-bars"></i>
                 </button>
 
-                <div className="collapse navbar-collapse " id="navbarContent">
+                <div className="collapse navbar-collapse" id="navbarContent">
                     {/* <!-- NAVBAR LEFT --> */}
                     <ul className="navbar-nav me-auto my-lg-0 navbar-nav-scroll">
-
+                        <li className="nav-item">
+                            <NavLink to={'/'} className='nav-link'>Trang chủ</NavLink>
+                        </li>
                         <li className="nav-item">
                             <NavLink to={Routers.Pages.AboutUs} className='nav-link'>Về chúng tôi</NavLink>
                         </li>
@@ -52,6 +72,9 @@ export default function Navigation(props) {
                     </ul>
                 </div>
             </div>
+
         </nav>
+
+        
     );
 }
