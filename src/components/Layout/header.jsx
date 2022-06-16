@@ -12,7 +12,7 @@ export default function Header(props) {
                             <img src={process.env.PUBLIC_URL + '/img/logo.png'} alt="logo_item" />
                         </a>
                     </div>
-                    <div className="page__title col col-md-6 col-xs-12 align-self-center text text-center">
+                    <div className="page__title col col-md-7 col-xs-12 align-self-center text text-center">
                         <h4 className="no-margin">LUYỆN THI TUYỂN SINH ĐẠI HỌC</h4>
                         <address className="no-margin">
                             Địa chỉ: Tầng 6 Ladeco, 266 Đội Cấn, Hà Nội
